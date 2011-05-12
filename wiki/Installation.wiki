@@ -1,14 +1,15 @@
 #summary Install the artifact in local repository.
+#labels installation
 
 = Introduction =
 
-To use the archetype you should Download the last stable (right now SNAPSHOT version) from [http://code.google.com/p/vaadin-spring-archetype/downloads/list Download Page].
+To use the archetype you should Download the last stable version (right now SNAPSHOT version) from the [http://code.google.com/p/vaadin-spring-archetype/downloads/list Download Page].
 
-In future I hope this artifact was deploy on a maven repository and anyone can use it without this step.
+In future I hope this artifact will be deployed on a maven repository and anyone can use it without this previous step.
 
 = Installation =
 
-After you [http://code.google.com/p/vaadin-spring-archetype/downloads/list download] the file you should open a new Terminal window and type:
+After you [http://code.google.com/p/vaadin-spring-archetype/downloads/list download] the file you should open a new Terminal window and type in it:
 
 {{{
 mvn install:install-file                            \
@@ -41,4 +42,4 @@ This maven command shows the following output:
 
 }}}
 
-If the output is like the shown above the artifact is just installed in your local repository and you can continue with the steps shown at [Create+A+Project create a project].
+If the output is like the shown above, the artifact is just installed in your local repository and you can continue with the steps shown at [Create+A+Project create a project].
