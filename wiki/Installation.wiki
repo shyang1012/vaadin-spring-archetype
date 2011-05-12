@@ -42,4 +42,4 @@ This maven command shows the following output:
 
 }}}
 
-If the output is like the shown above, the artifact is just installed in your local repository and you can continue with the steps shown at [Create+A+Project create a project].
+If the output is like the shown above, the artifact is just installed in your local repository and you can continue with the steps shown at [CreateAProject create a project].
