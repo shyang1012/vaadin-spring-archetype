@@ -1,0 +1,44 @@
+#summary Install the artifact in local repository.
+
+= Introduction =
+
+To use the archetype you should Download the last stable (right now SNAPSHOT version) from [http://code.google.com/p/vaadin-spring-archetype/downloads/list Download Page].
+
+In future I hope this artifact was deploy on a maven repository and anyone can use it without this step.
+
+= Installation =
+
+After you [http://code.google.com/p/vaadin-spring-archetype/downloads/list download] the file you should open a new Terminal window and type:
+
+{{{
+mvn install:install-file                            \
+   -Dfile=vaadin-spring-archetype-1.0-SNAPSHOT.jar  \
+   -DgroupId=com.vaadin                             \
+   -DartifactId=vaadin-spring-archetype             \
+   -Dversion=1.0-SNAPSHOT                           \
+   -Dpackaging=jar
+}}}
+
+This maven command shows the following output:
+
+{{{
+
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install-file (default-cli) @ standalone-pom ---
+[INFO] Installing /Users/.../vaadin-spring-archetype-1.0-SNAPSHOT.jar to /Users/.../.m2/repository/com/vaadin/vaadin-spring-archetype/1.0-SNAPSHOT/vaadin-spring-archetype-1.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.758s
+[INFO] Finished at: Thu May 12 08:25:53 CEST 2011
+[INFO] Final Memory: 3M/81M
+[INFO] ------------------------------------------------------------------------
+
+}}}
+
+If the output is like the shown above the artifact is just installed in your local repository and you can continue with the steps shown at [Create+A+Project create a project].
