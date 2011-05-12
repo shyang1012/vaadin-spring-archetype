@@ -33,5 +33,4 @@ mvn clean install
 mvn clean install jetty:run
 }}}
 
-  * Go to [http://localhost:8080/myApplication http://localhost:8080/myApplication] and you see a white page with ^Hello World!^ Label.
-
+  * Go to [http://localhost:8080/myApplication http://localhost:8080/myApplication] and you see a white page with *Hello World!* Label.
