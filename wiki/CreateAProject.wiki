@@ -16,7 +16,7 @@ To create a new project using this archetype you should follow the steps showing
 mvn archetype:generate                            \
   -DarchetypeGroupId=com.vaadin                   \
   -DarchetypeArtifactId=vaadin-spring-archetype   \
-  -DarchetypeVersion=1.0-SNAPSHOT                 \
+  -DarchetypeVersion=1.1-SNAPSHOT                 \
   -DgroupId=com.mycompany                         \
   -DartifactId=myApplication
 }}}
