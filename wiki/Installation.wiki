@@ -13,10 +13,10 @@ After you [http://code.google.com/p/vaadin-spring-archetype/downloads/list downl
 
 {{{
 mvn install:install-file                            \
-   -Dfile=vaadin-spring-archetype-1.0-SNAPSHOT.jar  \
+   -Dfile=vaadin-spring-archetype-1.1-SNAPSHOT.jar  \
    -DgroupId=com.vaadin                             \
    -DartifactId=vaadin-spring-archetype             \
-   -Dversion=1.0-SNAPSHOT                           \
+   -Dversion=1.1-SNAPSHOT                           \
    -Dpackaging=jar
 }}}
 
@@ -31,7 +31,7 @@ This maven command shows the following output:
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-install-plugin:2.3.1:install-file (default-cli) @ standalone-pom ---
-[INFO] Installing /Users/.../vaadin-spring-archetype-1.0-SNAPSHOT.jar to /Users/.../.m2/repository/com/vaadin/vaadin-spring-archetype/1.0-SNAPSHOT/vaadin-spring-archetype-1.0-SNAPSHOT.jar
+[INFO] Installing /Users/.../vaadin-spring-archetype-1.1-SNAPSHOT.jar to /Users/.../.m2/repository/com/vaadin/vaadin-spring-archetype/1.1-SNAPSHOT/vaadin-spring-archetype-1.1-SNAPSHOT.jar
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
