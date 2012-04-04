@@ -17,7 +17,8 @@ mvn install:install-file                            \
    -DgroupId=com.vaadin                             \
    -DartifactId=vaadin-spring-archetype             \
    -Dversion=1.1-SNAPSHOT                           \
-   -Dpackaging=jar
+   -Dpackaging=jar                                  \
+   -DgeneratePom=true
 }}}
 
 This maven command shows the following output:
