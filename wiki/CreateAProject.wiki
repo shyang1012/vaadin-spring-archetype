@@ -18,7 +18,8 @@ mvn archetype:generate                            \
   -DarchetypeArtifactId=vaadin-spring-archetype   \
   -DarchetypeVersion=1.1-SNAPSHOT                 \
   -DgroupId=com.mycompany                         \
-  -DartifactId=myApplication
+  -DartifactId=myApplication                      \
+  -Dversion=0.1-SNAPSHOT
 }}}
 
   * To start working with the recently created project go to _myApplication_ folder in a terminal and type:
@@ -30,7 +31,7 @@ mvn clean install
   * If you want test the app without enter any line of code you should type:
 
 {{{
-mvn clean install jetty:run
+mvn clean install tomcat:run
 }}}
 
   * Go to [http://localhost:8080/myApplication http://localhost:8080/myApplication] and you see a white page with *Hello World!* Label.
