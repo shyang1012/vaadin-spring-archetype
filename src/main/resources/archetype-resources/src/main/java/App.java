@@ -20,23 +20,37 @@ import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.context.annotation.Scope;
 
 import ${package}.util.BaseApplication;
-import com.vaadin.ui.Window;
+
+import com.vaadin.terminal.ExternalResource;
+
 import com.vaadin.ui.Label;
+import com.vaadin.ui.Window;
+
 
 /**
  * Hello world!
  */
-@Configurable ( preConstruction = true )
-@org.springframework.stereotype.Component ( value = "app" )
-public class App extends BaseApplication
-{
+@Configurable(preConstruction=true)
+@org.springframework.stereotype.Component(value="app")
+public class App extends BaseApplication {
     /**
      * @see com.vaadin.Application#init()
      */
     @Override
     public void init() {
-        setMainWindow( new Window( "Vaadin application" ) );
-        getMainWindow().addComponent( new Label("Hello World!"));
+        setMainWindow(new MainWindow());
     }
-
+    
+    @Override
+    public Window getWindow(String name) {
+        Window w = super.getWindow(name);
+        // If not, we must create a new window for this new browser window/tab
+        if (w == null) {
+            w = new MainWindow();
+            w.setName(name);
+            addWindow(w);
+            w.open(new ExternalResource(w.getURL()));
+        }
+        return w;
+    }
 }
