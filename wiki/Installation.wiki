@@ -12,12 +12,12 @@ In future I hope this artifact will be deployed on a maven repository and anyone
 After you [http://code.google.com/p/vaadin-spring-archetype/downloads/list download] the file you should open a new Terminal window and type in it:
 
 {{{
-mvn install:install-file                            \
-   -Dfile=vaadin-spring-archetype-1.1-SNAPSHOT.jar  \
-   -DgroupId=com.vaadin                             \
-   -DartifactId=vaadin-spring-archetype             \
-   -Dversion=1.1-SNAPSHOT                           \
-   -Dpackaging=jar                                  \
+mvn install:install-file                              \
+   -Dfile=vaadin-spring-archetype-1.2.1-SNAPSHOT.jar  \
+   -DgroupId=com.vaadin                               \
+   -DartifactId=vaadin-spring-archetype               \
+   -Dversion=1.2.1-SNAPSHOT                           \
+   -Dpackaging=jar                                    \
    -DgeneratePom=true
 }}}
 
@@ -32,7 +32,7 @@ This maven command shows the following output:
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-install-plugin:2.3.1:install-file (default-cli) @ standalone-pom ---
-[INFO] Installing /Users/.../vaadin-spring-archetype-1.1-SNAPSHOT.jar to /Users/.../.m2/repository/com/vaadin/vaadin-spring-archetype/1.1-SNAPSHOT/vaadin-spring-archetype-1.1-SNAPSHOT.jar
+[INFO] Installing /Users/.../vaadin-spring-archetype-1.1-SNAPSHOT.jar to /Users/.../.m2/repository/com/vaadin/vaadin-spring-archetype/1.2.1-SNAPSHOT/vaadin-spring-archetype-1.2.1-SNAPSHOT.jar
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
